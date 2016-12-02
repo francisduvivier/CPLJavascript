@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CPL</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="../node_modules/socket.io-client/dist/socket.io.js"></script>
+        <script src="lib.js"></script>
+        <script src="GUI.js"></script>
+                
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+               
+
+        <canvas id="battlefield" width="640" height="480"></canvas>
+        <input type="text" value="http://localhost:7000" id="server">
+        <p id='playerName'>Your name is not known yet</p>
+        <p id='gameInfo'>the game has started</p>
+        <p >The following players have quit: </p>
+        <p id='losers'> </p>
+        
+        <script src="client.js"> </script>
+    </body>
+</html>
